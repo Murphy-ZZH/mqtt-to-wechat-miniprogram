@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <button type="primary" bindtap="taphere">helloworld</button>
+</view> -->
+<view>{{list.data.gps}}</view>
+<map latitude="{{list.data.gps[1]}}" longitude="{{list.data.gps[0]}}" scale="{{14}}" markers="{{markers}}" ></map>
