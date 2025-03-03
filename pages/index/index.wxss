@@ -17,3 +17,20 @@
 .usermotto {
   margin-top: 200px;
 }
+
+/* index.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 视口高度 */
+}
+
+.map {
+  flex: 3; /* 3/4 屏幕高度 */
+}
+
+.info {
+  flex: 1; /* 1/4 屏幕高度 */
+  background-color: #fff; /* 可选背景色 */
+  padding: 10px; /* 可选内边距 */
+}

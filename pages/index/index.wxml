@@ -1,6 +1,8 @@
-<!--index.wxml-->
-<!-- <view class="container">
-  <button type="primary" bindtap="taphere">helloworld</button>
-</view> -->
-<view>{{list.data.gps}}</view>
-<map latitude="{{list.data.gps[1]}}" longitude="{{list.data.gps[0]}}" scale="{{14}}" markers="{{markers}}" ></map>
+<!-- index.wxml -->
+<view class="container">
+  <map class="map" latitude="{{result[1]}}" longitude="{{result[0]}}" scale="{{scale}}" markers="{{markers}}" show-location></map>
+  <view class="info">
+    <view>经度: {{result[0]}}</view>
+    <view>纬度: {{result[1]}}</view>
+  </view>
+</view>
